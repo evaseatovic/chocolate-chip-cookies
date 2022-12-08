@@ -9,6 +9,10 @@ void display() {
   //Output #3: console confirms dimention sizes (smaller and larger)
   if ( appWidth==0 || appHeight==0 ) println("STOP, is broken"); //OR
   if ( appWidth!=0 && appHeight!=0 ) println("Display: Good to Go"); //AND
+  if ( appWidth >= appHeight ) {
+  smallerDimention = appHeight;
+  largerDimention = appWidth;
+  }
   //Output #4: if error with any of above, program will exit or be broken
   //           Hint: "bru, turn your phun."
   String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Bru, turn your phun";
