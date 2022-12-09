@@ -1,6 +1,7 @@
 //Global Variables
 int appWidth, appHeight, smallerDimention, largerDimention;
 boolean OS_on=false;
+color purple=#FF00FF, resetDefaultInk=;
 //
 void setup() {
   size(600, 400);
