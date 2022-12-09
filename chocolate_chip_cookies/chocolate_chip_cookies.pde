@@ -10,11 +10,12 @@ void setup() {
   display();
   //Display Algorithum will populate smaller and larger dimentions
   println("Smaller Dimention is", smallerDimention, "Larger Dimention is", largerDimention);
+  population();
 }//End setup
 //
 void draw() {
   //Assigment: #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true ) splashScreen; //OS Level mouse click
+  if ( OS_on==true ) splashScreen(); //OS Level mouse click
   //
 }//End draw
 //
@@ -24,7 +25,7 @@ void keyPressed() {
 //
 void mousePressed() {
   //OS Level Mouse Click
-  if ( OS_on==false ) ;//End OS Level Mouse Click
+  if ( OS_on==false ) OS_on=true;//End OS Level Mouse Click
 }//End mousePressed
 //
 //End MAIN Program
