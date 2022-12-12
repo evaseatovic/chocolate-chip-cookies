@@ -1,27 +1,35 @@
 //Global Variables
-int appWidth, appHeight, smallerDimention, largerDimention;
-boolean OS_on=false;
-color purple=#FF00FF, resetDefaultInk=;
+int appWidth, appHeight, smallerDimension, largerDimension;
+Boolean OS_on=false, splashScreenStart=false, backgroundWhiteScreen;
+/* Night Mode Comment
+ Purple not for Night Mode, full BLUE
+ resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE
+ */
+color purple=#FF00FF, resetDefaultInk=#FFFFFF;
 //
 void setup() {
   size(600, 400);
+  //fullScreen(); //displayWidth //displayHeight
   appWidth = width;
   appHeight = height;
-  //Assigment: Display Algorithum from Hello World
-  display();
-  //Display Algorithum will populate smaller and larger dimentions
-  println("Smaller Dimention is", smallerDimention, "Larger Dimention is", largerDimention);
+  //Assignment: Display Alogrithm from Hello World
+  //display(); 
+  //Display Algorithm will populate smaller and larger dimensions
+  println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
   population();
+  textSetup();
 }//End setup
 //
 void draw() {
-  //Assigment: #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true ) splashScreen(); //OS Level mouse click
+  //Assginment #2: OS Level Mouse Click and Splash Screen
+  if ( OS_on==true ) splashScreen(); //OS Level Mouse Click
+  if ( splashScreenStart==true ) homeScreen();
   //
 }//End draw
 //
 void keyPressed() {
-  
+  //splash Screen SPACE Bar
+  if ( key==' ' ) splashScreenStart = true;
 }//End keyPressed
 //
 void mousePressed() {

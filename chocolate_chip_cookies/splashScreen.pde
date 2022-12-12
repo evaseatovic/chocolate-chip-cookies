@@ -10,6 +10,7 @@ void splashScreen() {
   -
   */
   background(255); //Testing only, not night mode friendly, full BLUE
+  void backgroundWhiteScreen();
   spaceBarText();
 }//End splashScreen
 //
