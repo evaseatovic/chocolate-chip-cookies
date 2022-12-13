@@ -1,4 +1,4 @@
-PFont harrington;
+PFont cambria;
 //
 void textSetup() {
   //Assignment #2: Minimum Expectation = one font
@@ -6,7 +6,7 @@ void textSetup() {
   //Fonts from OS (Operating System)
   //String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
-  harrington = createFont("Harrington", 55); //Verify the font exists in Processing.Java
+  cambria = createFont("Cambria", 55); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
   //
 }//End textSetup
@@ -17,7 +17,7 @@ void spaceBarText() {
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 19; //Change the number until it fits
-  textFont(harrington, size); 
+  textFont(cambria, size); 
   String spaceBar = "Press the SPACE BAR to continue";
   text( spaceBar, startX, startY, startWidth, startHeight );
   fill(resetDefaultInk);
