@@ -9,6 +9,12 @@ void population() {
   backgroundY = appHeight * 0;
   backgroundWidth = appWidth;
   backgroundHeight = appHeight;
+  //
+  quitWidth = ;
+  quitHeight = ;
+  quitX = centerX - ;
+  quitY = centerY - ;
+  //
 }//End population
 //
 //End Population Subprogram
