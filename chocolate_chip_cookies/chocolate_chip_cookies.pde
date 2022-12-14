@@ -5,6 +5,7 @@ Boolean OS_on=false, splashScreenStart=false;
  Purple not for Night Mode, full BLUE
  resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE
  */
+Boolean nightMode=false;
 color purple=#FF00FF, resetDefaultInk=#000000, white=#FFFFFF;
 //
 void setup() {
@@ -35,11 +36,19 @@ void keyPressed() {
     backgroundImage();
   }//End Splash Screen SPACE Bar
   //
+  //KeyBoard Short Cuts
   if ( key==CODED && keyCode==ESC ) exit();
   if ( key=='Q' || key=='q' ) exit();
   if ( key=='N' || key=='n' ) {
+    if ( nightMode==true ) { 
+      nightMode=false;
+      backgroundImage();
+    } else { 
+      nightMode=true;
+      backgroundImage();
+    }
     //Night Mode
-}
+  }
   //
 }//End keyPressed
 //
