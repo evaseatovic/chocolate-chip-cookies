@@ -1,5 +1,5 @@
 int backgroundX, backgroundY, backgroundWidth, backgroundHeight;
-float quitX, quitY, quitWidth, quitHeight;
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight, quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85; //BLUE should be Zero or as close to it
 //
