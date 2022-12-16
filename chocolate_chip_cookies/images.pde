@@ -4,11 +4,15 @@ void imagePopulation() {
   backGroundImage = loadImage ("wilhelm-gunkel-ex0TpGuBLy0-unsplash.jpg");
 }//End imagePopulation
 //
+void imageNightMode() {
+  if ( 
+}//End imageNightMode
+//
 void quitButtonImage() {
   quitButtonImage = backGroundImage;
   rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
   //Aspect Ratio
-  float quitButtonImageWidth=, quitButtonImageHeight= ;
+  float quitButtonImageWidth=5760, quitButtonImageHeight=3840 ;
   //Following vars must be populated or debugger error b/c IF
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
   float quitButtonImageWidth_Calculated=0.0, quitButtonImageHeight_Calculated=0.0;
@@ -37,3 +41,10 @@ void quitButtonImage() {
 }//End imagePopulation
 //
 //End Image Subprogram
+//
+void quitButtonHverOver() {
+  if ( nightMode==false ) tint( tintDayMode, tintDayModeOpacity ); //Day Mode, see ternary operator
+  if ( nightMode==true ) tint( tintRed, tintGreen, tintBlue, tintNightModeOpacity ); //Night Mode, see ternary operator
+  image( backGroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight );
+}//End backgroundImage
+}//End quitButtonHoverOver
