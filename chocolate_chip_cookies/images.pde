@@ -6,6 +6,12 @@ void imagePopulation() {
 //
 void imageNightMode() {
   if ( 
+    //
+    if () {
+    tint( tintRed, tintGreen, tintBlue, thingNightModeOpacity );
+  } else {
+    tint( tingDayMode, thingNightModeOpacity );
+  }
 }//End imageNightMode
 //
 void quitButtonImage() {
@@ -36,7 +42,7 @@ void quitButtonImage() {
   }
   //
   //No Aspect Ratio
-    //
+  //
   image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
 }//End imagePopulation
 //
