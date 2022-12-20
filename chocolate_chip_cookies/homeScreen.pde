@@ -32,6 +32,7 @@ void backgroundWhiteScreen() {
 void backgroundImage() {
   backgroundWhiteScreen();
   imageNightMode();
+  rect(48, 52, 100, 34);
   image( backGroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight );
 }//End backgroundImage
 //
