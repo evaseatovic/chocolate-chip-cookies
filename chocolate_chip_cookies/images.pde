@@ -1,7 +1,7 @@
 PImage backGroundImage, quitButtonImage;
 //
 void imagePopulation() {
-  backGroundImage = loadImage ("wilhelm-gunkel-ex0TpGuBLy0-unsplash.jpg");
+  backGroundImage = loadImage ("../images/wilhelm-gunkel-ex0TpGuBLy0-unsplash.jpg");
 }//End imagePopulation
 //
 void imageNightMode() {
