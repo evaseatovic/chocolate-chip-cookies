@@ -19,6 +19,9 @@ void homeScreen() {
   //
   //rect( quitX, quitY, quitWidth, quitHeight );
   quitButtonHoverOver();
+  fill(white);
+  rect(0, 0, 240, 190);
+  rect(20, 0, 190,240);
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
