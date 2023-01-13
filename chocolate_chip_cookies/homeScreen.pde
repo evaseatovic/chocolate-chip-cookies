@@ -1,6 +1,8 @@
 int backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
+float lineX, lineY, lineEndX, lineEndY;
+float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85; //BLUE should be Zero or as close to it
 //
@@ -20,8 +22,13 @@ void homeScreen() {
   //rect( quitX, quitY, quitWidth, quitHeight );
   quitButtonHoverOver();
   fill(white);
-  rect(0, 0, 240, 190);
-  rect(20, 0, 190,240);
+   line(lineX, lineY, lineEndX, lineEndY);
+   //
+   line(line2X, line2Y, likeEndX2, lineEndY2);
+  //
+  line(line3X, line3Y, likeEndX3, lineEndY3);
+  //
+  line(line4X, line4Y, likeEndX4, lineEndY4);
 }//End homeScreen
 //
 void backgroundWhiteScreen() {
