@@ -19,7 +19,26 @@ void population() {
   quitButtonImageRectHeight = quitHeight; 
   quitButtonImageRectX = quitX; //Will need to be fixed
   quitButtonImageRectY = quitY;
-  
+  //
+   lineX = appWidth * 1/3;
+  lineY = appHeight;
+  lineEndX = lineX;
+  lineEndY = backgroundY;
+  //
+  line2X= appWidth * 2/3;
+  line2Y= appHeight;
+  likeEndX2= line2X;
+  lineEndY2= backgroundY;
+  //
+  line3X= appWidth * 0;
+  line3Y= appHeight * 1/3;
+  likeEndX3= appWidth;
+  lineEndY3= line3Y;
+  //
+  line4X= appWidth * 0;
+  line4Y= appHeight * 2/3;
+  likeEndX4= appWidth;
+  lineEndY4= line4Y;
   //
 }//End population
 //
