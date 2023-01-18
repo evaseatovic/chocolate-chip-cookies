@@ -3,6 +3,7 @@ float quitX, quitY, quitWidth, quitHeight;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 float lineX, lineY, lineEndX, lineEndY;
 float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
+  float rectWidth, rectHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85; //BLUE should be Zero or as close to it
 //
@@ -20,8 +21,8 @@ void homeScreen() {
   //println("Arrived at Home Screen"); //Testing for Splash Screen Start Button
   //
   //rect( quitX, quitY, quitWidth, quitHeight );
-  quitButtonHoverOver();
-  fill(white);
+  fill(1);
+  stroke(30);
    line(lineX, lineY, lineEndX, lineEndY);
    //
    line(line2X, line2Y, likeEndX2, lineEndY2);
@@ -29,6 +30,9 @@ void homeScreen() {
   line(line3X, line3Y, likeEndX3, lineEndY3);
   //
   line(line4X, line4Y, likeEndX4, lineEndY4);
+  //
+  image(firstSquareImage, appWidth*0, appHeight*0,rectWidth, rectHeight);
+ // quitButtonHoverOver();
 }//End homeScreen
 //
 void backgroundWhiteScreen() {

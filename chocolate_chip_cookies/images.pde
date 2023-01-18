@@ -1,7 +1,11 @@
-PImage backGroundImage, quitButtonImage;
+PImage backGroundImage, quitButtonImage, firstSquareImage, imageOne;
 //
 void imagePopulation() {
   backGroundImage = loadImage ("../images/wilhelm-gunkel-ex0TpGuBLy0-unsplash.jpg");
+  //
+   firstSquareImage = loadImage ("../images/defaultmeadow.jpg");
+   
+  //
 }//End imagePopulation
 //
 void imageNightMode() {
