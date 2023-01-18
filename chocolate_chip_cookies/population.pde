@@ -42,6 +42,9 @@ void population() {
   rectWidth=appWidth*1/3;
   rectHeight=appHeight*1/3;
   //
+  rectWidth=appWidth*2/3;
+  rectHeight=appHeight*2/3;
+  //
 }//End population
 //
 //End Population Subprogram
